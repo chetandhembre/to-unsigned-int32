@@ -26,7 +26,7 @@ Module only support async api.
 
 1. An error object.
 
-2. Buffer whose length is 4.
+2. Buffer whose length is 4 bytes.
 
 ##licence
 ===
