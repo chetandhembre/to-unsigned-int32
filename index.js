@@ -9,5 +9,5 @@ module.exports = function (n, callback) {
 
   var buffr = new Buffer(4)
   buffr.writeUInt32BE(n, 0)
-  return callback(buffr)
+  return callback(null, buffr)
 }
