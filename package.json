@@ -1,6 +1,6 @@
 {
   "name": "to-unsigned-int32",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert to number of 32 bit buffer",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,10 @@
     "integer",
     "Buffer"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chetandhembre/to-unsigned-int32"
+  },
   "author": "ichetandhembre <chetandhembre@gmail.com>",
   "license": "MIT",
   "dependencies": {
