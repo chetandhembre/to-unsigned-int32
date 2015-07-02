@@ -9,7 +9,7 @@ Currently only support [big endian](https://en.wikipedia.org/wiki/Endianness#Big
 ```
 npm i to-unsigned-int32
 ```
-##Example
+##Usage
 ```js
 var toUInt32 = require('to-unsigned-int32')
 
@@ -18,12 +18,6 @@ toUInt32(12, function (err, res) {
 })
 
 ```
-
-##API
-===
-
-toUInt(n, callback)
----
 Module only support async api. 
 
 `n` can be number in any base
