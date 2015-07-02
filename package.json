@@ -1,0 +1,21 @@
+{
+  "name": "to-unsigned-int32",
+  "version": "1.0.0",
+  "description": "convert to number of 32 bit buffer",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "uint32",
+    "uint64"
+  ],
+  "author": "ichetandhembre <chetandhembre@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dezalgo": "^1.0.3"
+  },
+  "devDependencies": {
+    "standard": "^4.5.1"
+  }
+}
