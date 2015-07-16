@@ -12,27 +12,39 @@ also checkout [from-unsigned-int32](https://github.com/chetandhembre/from-unsign
 ```
 npm i to-unsigned-int32
 ```
-## Usage
-```js
-var toUInt32 = require('to-unsigned-int32')
+## API
 
-toUInt32(12, function (err, res) {
-	console.log(res) //<Buffer 00 00 00 0c>
-})
+1. #####Async API
 
-```
-Module only support async api. 
+	```js
+	var toUInt32 = require('to-unsigned-int32')
 
-`n` can be number in any base.
+	toUInt32(12, function (err, res) {
+		console.log(res) //<Buffer 00 00 00 0c>
+	})
 
-`callback` get two arguments:
+	```
 
-1. An error object.
+	`n` can be number in any base.
 
-2. Buffer with length of 4.
+	`callback` get two arguments:
+
+	  * An error object.
+	  * Buffer with length of 4.
+
+2. #####Sync API
+
+	```js
+	var toUInt32 = require('to-unsigned-int32')
+
+	console.log(toUInt32.toUInt32Sync(12)) //<Buffer 00 00 00 0c>
+
+	```
+
+	`n` can be number in any base.
+
+	returns buffer with length 4.
 
 ## licence
-===
+
 MIT
-
-

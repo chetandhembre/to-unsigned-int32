@@ -19,3 +19,16 @@ tap.test('should return corrent buffer for value number', function (t) {
     t.end()
   })
 })
+
+tap.test('toUInt32Sync: should throw error when number can not fit in 32 bit', function (t) {
+  t.throws(function () {
+    toUInt32.toUInt32Sync(0xfff)
+  }, 'Number can not represent in 32 bit')
+  t.end()
+})
+
+tap.test('toUInt32Sync: should return correct buffer for value number', function (t) {
+  var buffr = toUInt32.toUInt32Sync(0xC)
+  t.equal(buffr.readUInt32BE(0), 0xC)
+  t.end()
+})
