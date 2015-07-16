@@ -2,9 +2,9 @@ var tap = require('tap')
 var toUInt32 = require('../')
 
 tap.test('should return error when number can not fit in 32 bit', function (t) {
-  toUInt32(0xfff, function (err, buff) {
+  toUInt32(0xaffffffff, function (err, buff) {
     t.type(err, Error)
-    t.equal(err.message, 'Number can not represent in 32 bit', 'handling error for number can not fit in 32 bit')
+    t.equal(err.message, 'value is out of bounds', 'handling error for number can not fit in 32 bit')
     t.notOk(buff, 'buff should be null')
     t.end()
   })
